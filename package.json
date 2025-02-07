@@ -1,0 +1,19 @@
+{
+  "name": "firestore-csv-sync",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon src/app.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "firebase-admin": "^13.1.0"
+  }
+}

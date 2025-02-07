@@ -1,0 +1,82 @@
+[
+    {
+        "id": "22a7330e34d59ad3",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e40d78640e91e0c8",
+        "type": "file in",
+        "z": "22a7330e34d59ad3",
+        "name": "",
+        "filename": "/csv-file.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "8cf92351353b502f"
+            ]
+        ]
+    },
+    {
+        "id": "8cf92351353b502f",
+        "type": "csv",
+        "z": "22a7330e34d59ad3",
+        "name": "",
+        "spec": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "a,b,c",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "49192ad0bbcf9d7d"
+            ]
+        ]
+    },
+    {
+        "id": "49192ad0bbcf9d7d",
+        "type": "http response",
+        "z": "22a7330e34d59ad3",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "06bd997a8cec189e",
+        "type": "http in",
+        "z": "22a7330e34d59ad3",
+        "name": "",
+        "url": "/csv-file",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "e40d78640e91e0c8"
+            ]
+        ]
+    }
+]

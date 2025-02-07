@@ -1,0 +1,5 @@
+.env
+csv-file.csv
+firebase-credential.json
+node_modules/
+
