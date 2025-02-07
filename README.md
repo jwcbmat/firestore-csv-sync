@@ -34,5 +34,5 @@ docker-compose up
 
 
 <p align="center">
-  Made with :heart: by <a href="https://github.com/jwcbmat)" target="_blank">John</a>
+  Made with :heart: by <a href="https://github.com/jwcbmat" target="_blank">John</a>
 </p>
